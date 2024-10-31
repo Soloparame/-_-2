@@ -1,0 +1,211 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212; /* Black background */
+            color: #E0E0E0; /* Light gray text */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1E1E1E; /* Darker header */
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #1DA1F2; /* Blue color for links */
+            text-decoration: none;
+            font-weight: 700;
+            transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+            padding: 10px 20px; /* Add padding for circular effect */
+            border-radius: 50%; /* Make it circular */
+            background-color: #1E1E1E; /* Background color for visibility */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Glow effect */
+        }
+
+        nav ul li a:hover {
+            color: #0a85d1; /* Darker blue on hover */
+            transform: scale(1.1); /* Slightly enlarge the link on hover */
+            background-color: rgba(29, 161, 242, 0.4); /* Light blue background on hover */
+            box-shadow: 0 0 20px rgba(29, 161, 242, 0.8); /* Stronger glow on hover */
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            text-align: center; /* Center the section headings */
+            margin: 20px auto; /* Space above and below */
+            padding: 10px 20px; /* Padding for the heading */
+            border-radius: 50%; /* Make it circular */
+            background-color: #1E1E1E; /* Background color for visibility */
+            border: 3px solid #1DA1F2; /* Blue border */
+            display: inline-block; /* Center the heading as a block */
+            transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+            box-shadow: 0 0 15px rgba(29, 161, 242, 0.5); /* Glow effect */
+            color: #1DA1F2; /* Set text color to match navigation links */
+            font-weight: bold; /* Make the font bold */
+        }
+
+        h2:hover {
+            background-color: rgba(29, 161, 242, 0.4); /* Light blue background on hover */
+            transform: scale(1.05); /* Slightly enlarge the heading on hover */
+            box-shadow: 0 0 25px rgba(29, 161, 242, 0.8); /* Stronger glow on hover */
+            color: #0a85d1; /* Change text color on hover */
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .section {
+            background-color: #1E1E1E; /* Dark background for sections */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+        }
+
+        .section:hover {
+            transform: scale(1.02); /* Slightly enlarge the section on hover */
+            box-shadow: 0 6px 20px rgba(29, 161, 242, 0.7); /* Stronger glow effect */
+        }
+
+        .section p {
+            line-height: 1.6; /* Improve readability */
+        }
+
+        .achievements ul {
+            list-style-type: none; /* Remove default list style */
+            padding-left: 0; /* Remove padding */
+        }
+
+        .achievements li {
+            background-color: #2A2A2A; /* Darker background for list items */
+            margin: 10px 0; /* Space between items */
+            padding: 10px; /* Padding for items */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+        }
+
+        .achievements li:hover {
+            background-color: rgba(29, 161, 242, 0.3); /* Light blue background on hover */
+            transform: translateY(-3px); /* Slight upward movement on hover */
+        }
+
+        .quote {
+            background-color: #2A2A2A; /* Darker background for quotes */
+            border-left: 4px solid #1DA1F2; /* Blue border */
+            padding: 10px; /* Padding for quote */
+            margin: 15px 0; /* Space around quote */
+            font-style: italic; /* Italic text */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        .quote:hover {
+            background-color: rgba(29, 161, 242, 0.2); /* Lighter background on hover */
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #1E1E1E;
+            color: #E0E0E0; /* Light gray text */
+        }
+
+        .profile-img {
+            width: 100%; /* Make the image wider */
+            max-width: 400px; /* Set a new max-width for the image */
+            border-radius: 8px;
+            margin: 20px auto; /* Center the image horizontally */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for movement and shadow */
+            cursor: pointer; /* Change cursor to pointer for hover effect */
+        }
+        
+        .profile-img:hover {
+            transform: translateY(-10px) scale(1.05); /* Slight upward movement and scaling on hover */
+            box-shadow: 0 4px 20px rgba(29, 161, 242, 0.7); /* Stronger shadow effect on hover */
+        }
+        
+        
+
+.tabs {
+    text-align: center;
+    margin: 20px 0;
+    
+}
+
+
+
+.tab:target {
+    display: block; /* Show the target tab */
+}
+
+.tab-link {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #1E1E1E;
+    color: #E0E0E0;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-link:hover {
+    background-color: #1DA1F2; /* Highlight on hover */
+    color: #ffffff;
+}
+
+.tab-content {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.bio-img {
+    width: 150px; /* Set a small size */
+    height: 150px; /* Set height equal to width for a circle */
+    border-radius: 20%; /* Make the images circular */
+    margin: 10px;
+    border: 2px solid #1DA1F2; /* Optional: Add a border for better visibility */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.bio-img:hover {
+    transform: scale(1.1); /* Scale up slightly on hover */
+    box-shadow: 0 4px 20px rgba(29, 161, 242, 0.7); /* Enhanced shadow on hover */
+}
